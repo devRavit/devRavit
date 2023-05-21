@@ -6,9 +6,6 @@
 <a href="">
 <img height=200 width=400 src="https://github-readme-stats-git-master-rstaa-rickstaa.vercel.app/api?username=devRavit&show_icons=true&theme=noctis_minimus" alt="devRavit's Github stats" />
 </a>
-<script>
-  alert("test");
-</script>
 ### 💪 Skills
 #### Platforms
 <p>
