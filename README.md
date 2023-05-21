@@ -1,8 +1,10 @@
 ### Hi there 👋
 
+<!--
 <a href="">
 <img height=200 width=400 src="https://github-readme-stats-git-master-rstaa-rickstaa.vercel.app/api/top-langs/?username=devRavit&show_icons=true&theme=noctis_minimus" alt="devRavit's Language stats" />
 </a>
+-->
 <a href="">
 <img height=200 width=400 src="https://github-readme-stats-git-master-rstaa-rickstaa.vercel.app/api?username=devRavit&show_icons=true&theme=noctis_minimus" alt="devRavit's Github stats" />
 </a>
