@@ -52,5 +52,5 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
 </a>
 -->
 <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width=100%/>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width=100% />
 </a>
