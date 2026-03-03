@@ -82,22 +82,22 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
 
 ```text
 💬 프로그래밍 언어들: 
-Kotlin                   9 hrs 35 mins       ██████████████████████░░░   86.69 % 
-TypeScript               29 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.48 % 
-YAML                     20 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.11 % 
-Markdown                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.77 % 
-HTTP Request             11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.69 % 
+Kotlin                   6 hrs 48 mins       █████████████████████░░░░   85.25 % 
+TypeScript               29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.19 % 
+Markdown                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
+YAML                     13 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.80 % 
+HTTP Request             8 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.77 % 
 
 🔥 에디터들: 
-IntelliJ IDEA            10 hrs 45 mins      ████████████████████████░   97.23 % 
-Obsidian                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.77 % 
+IntelliJ IDEA            7 hrs 41 mins       ████████████████████████░   96.17 % 
+Obsidian                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
 
 🐱‍💻 프로젝트들: 
-package-reservation      7 hrs 10 mins       ████████████████░░░░░░░░░   64.91 % 
-package-product          2 hrs 33 mins       ██████░░░░░░░░░░░░░░░░░░░   23.09 % 
-int-package-web          29 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.48 % 
-package-supplier         22 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.42 % 
-C101.NOL                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.77 % 
+package-reservation      5 hrs 24 mins       █████████████████░░░░░░░░   67.77 % 
+package-product          1 hr 22 mins        ████░░░░░░░░░░░░░░░░░░░░░   17.23 % 
+int-package-web          29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.19 % 
+package-supplier         22 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.73 % 
+C101.NOL                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
 ```
 
 
