@@ -82,22 +82,22 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
 
 ```text
 💬 프로그래밍 언어들: 
-Kotlin                   6 hrs 48 mins       █████████████████████░░░░   85.25 % 
-TypeScript               29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.19 % 
-Markdown                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
-YAML                     13 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   02.80 % 
-HTTP Request             8 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.77 % 
+Kotlin                   4 hrs 45 mins       ██████████████████████░░░   87.87 % 
+Markdown                 17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+YAML                     13 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.02 % 
+HTTP Request             8 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.74 % 
+TypeScript               0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 % 
 
 🔥 에디터들: 
-IntelliJ IDEA            7 hrs 41 mins       ████████████████████████░   96.17 % 
-Obsidian                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
+IntelliJ IDEA            5 hrs 8 mins        ████████████████████████░   94.74 % 
+Obsidian                 17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
 
 🐱‍💻 프로젝트들: 
-package-reservation      5 hrs 24 mins       █████████████████░░░░░░░░   67.77 % 
-package-product          1 hr 22 mins        ████░░░░░░░░░░░░░░░░░░░░░   17.23 % 
-int-package-web          29 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   06.19 % 
-package-supplier         22 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.73 % 
-C101.NOL                 18 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.83 % 
+package-reservation      3 hrs 7 mins        ██████████████░░░░░░░░░░░   57.73 % 
+package-product          1 hr 36 mins        ███████░░░░░░░░░░░░░░░░░░   29.53 % 
+package-supplier         23 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.07 % 
+C101.NOL                 17 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
+package-hub              1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.36 % 
 ```
 
 
