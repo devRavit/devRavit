@@ -82,22 +82,22 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
 
 ```text
 💬 프로그래밍 언어들: 
-Kotlin                   2 hrs 35 mins       ██████████████████████░░░   88.82 % 
-Markdown                 18 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.61 % 
-HTTP Request             0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
-GitIgnore file           0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.11 % 
-JSON                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
+Kotlin                   2 hrs 57 mins       ███████████████████░░░░░░   75.77 % 
+Markdown                 37 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.08 % 
+Terraform                11 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.76 % 
+textmate                 5 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.51 % 
+HTTP Request             1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 % 
 
 🔥 에디터들: 
-IntelliJ IDEA            2 hrs 37 mins       ███████████████████████░░   90.05 % 
-Obsidian                 17 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.95 % 
+IntelliJ IDEA            3 hrs 18 mins       █████████████████████░░░░   84.42 % 
+Obsidian                 36 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
 
 🐱‍💻 프로젝트들: 
-package-reservation      1 hr 44 mins        ███████████████░░░░░░░░░░   59.91 % 
-dynamic                  29 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.68 % 
-package-product          22 mins             ███░░░░░░░░░░░░░░░░░░░░░░   13.09 % 
-C101.NOL                 17 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   09.95 % 
-package-supplier         0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.20 % 
+package-reservation      1 hr 57 mins        ████████████░░░░░░░░░░░░░   49.91 % 
+dynamic                  39 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.72 % 
+C101.NOL                 36 mins             ████░░░░░░░░░░░░░░░░░░░░░   15.58 % 
+package-product          23 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   10.00 % 
+inpark-tour-services     17 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   07.51 % 
 ```
 
 
