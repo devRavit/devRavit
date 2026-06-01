@@ -87,31 +87,7 @@ InterparkTriple → NOL Universe, Seoul / South Korea&nbsp;&nbsp;`(04/2022 ~ )`
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=devRavit&theme=material-palenight&hide_border=true&background=20232a&ring=58A6FF&fire=E34C26&currStreakLabel=58A6FF" width="85%"/>
-
-<br/>
-
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devRavit&layout=compact&theme=material-palenight&hide_border=true&bg_color=20232a&text_color=fff&title_color=58A6FF&count_private=true&langs_count=8" width="60%"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### 🐍 Contribution Snake
-
-<img src="https://raw.githubusercontent.com/devRavit/devRavit/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-
-</div>
-
-<br/>
-
-<div align="center">
-
-### 📈 Activity Graph
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width="100%"/>
 
 </div>
 
