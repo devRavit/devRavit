@@ -2,38 +2,26 @@
 
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Moirai+One&size=38&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&height=70&lines=Welcome+to+RAViT's+GitHub;Backend+Engineer+based+in+Seoul;Kotlin+%7C+TypeScript+%7C+Spring" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Moirai+One&size=30&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&height=60&lines=Welcome+to+RAViT's+GitHub;Backend+Engineer+based+in+Seoul;Kotlin+%7C+TypeScript+%7C+Spring" alt="Typing SVG" /></a>
 
-<p>
-  <a href="https://ravit.run"><img src="https://img.shields.io/badge/Blog-ravit.run-36B2F7?style=for-the-badge&logo=hugo&logoColor=white"/></a>
-  <a href="mailto:devravit@gmail.com"><img src="https://img.shields.io/badge/Email-devravit@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/devRavit"><img src="https://img.shields.io/badge/GitHub-devRavit-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <img src="https://komarev.com/ghpvc/?username=devRavit&style=for-the-badge&color=5191DF&label=PROFILE+VIEWS"/>
-</p>
+<br/>
+
+<a href="https://ravit.run"><img src="https://img.shields.io/badge/Blog-ravit.run-36B2F7?style=for-the-badge&logo=hugo&logoColor=white"/></a>
+<a href="mailto:devravit@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/devRavit"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=devRavit&style=for-the-badge&color=5191DF&label=VIEWS"/>
 
 </div>
 
 <br/>
 
-<table align="center" width="100%">
-<tr>
-<td valign="top" width="46%">
+<div align="center">
 
-### &nbsp;👤 &nbsp;About Me
+### 👤 About Me
 
-```yaml
-name:     RAViT
-role:     Backend Engineer
-company:  NOL Universe
-location: Seoul, South Korea
-blog:     https://ravit.run
-chronotype: 🦉 저녁형 인간
-most_productive: 토요일
-ask_me_about:
-  - Kotlin
-  - Spring
-  - .NET
-```
+🏢 Backend Engineer **@ NOL Universe** &nbsp;·&nbsp; 📍 Seoul, South Korea
+🔗 [ravit.run](https://ravit.run) &nbsp;·&nbsp; 🦉 저녁형 인간 &nbsp;·&nbsp; 🗓️ 토요일에 가장 생산적
+💬 Ask me about **Kotlin · Spring · .NET**
 
 <details>
 <summary><b>📜 &nbsp;Who is RAViT</b></summary>
@@ -41,92 +29,97 @@ ask_me_about:
 <br/>
 
 **WORK EXPERIENCE**
-- **MinervaSoft**, Seoul / South Korea `(09/2020 ~ 04/2022)`
-- **InterparkTriple → NOL Universe**, Seoul / South Korea `(04/2022 ~ )`
+
+MinervaSoft, Seoul / South Korea&nbsp;&nbsp;`(09/2020 ~ 04/2022)`
+
+InterparkTriple → NOL Universe, Seoul / South Korea&nbsp;&nbsp;`(04/2022 ~ )`
 
 </details>
 
-</td>
-<td valign="top" width="54%">
-
-### &nbsp;🧰 &nbsp;Tech Stack
-
-**Languages**
-
-<p>
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-</p>
-
-**Backend**
-
-<p>
-  <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ASP.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
-</p>
-
-**Frontend / Desktop**
-
-<p>
-  <img src="https://img.shields.io/badge/WPF-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WinForms-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white"/>
-</p>
-
-**Tools**
-
-<p>
-  <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"/>
-</p>
-
-</td>
-</tr>
-</table>
+</div>
 
 <br/>
 
 <div align="center">
 
-### 🏆 &nbsp;GitHub Trophy
+### 🧰 Tech Stack
 
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=devRavit&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%"/>
-</a>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
 
-<br/><br/>
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/ASP.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
+<img src="https://img.shields.io/badge/WPF-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white"/>
+<img src="https://img.shields.io/badge/WinForms-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white"/>
 
-### 📊 &nbsp;GitHub Stats
+<img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white"/>
+<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"/>
+<img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"/>
+<img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white"/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=devRavit&show_icons=true&theme=material-palenight&hide_border=true&bg_color=20232a&icon_color=58A6FF&text_color=fff&title_color=58A6FF&count_private=true" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devRavit&layout=compact&theme=material-palenight&hide_border=true&bg_color=20232a&text_color=fff&title_color=58A6FF&count_private=true&langs_count=8" width="40%"/>
+</div>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=devRavit&theme=material-palenight&hide_border=true&background=20232a&ring=58A6FF&fire=E34C26&currStreakLabel=58A6FF" width="60%"/>
+<div align="center">
 
-<br/><br/>
+### 🏆 GitHub Trophy
 
-### 🐍 &nbsp;Contribution Snake
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=devRavit&theme=algolia&no-frame=true&no-bg=true&margin-w=4&column=4&row=2" width="95%"/>
+</a>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### 📊 GitHub Stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=devRavit&show_icons=true&theme=material-palenight&hide_border=true&bg_color=20232a&icon_color=58A6FF&text_color=fff&title_color=58A6FF&count_private=true" width="85%"/>
+
+<br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=devRavit&theme=material-palenight&hide_border=true&background=20232a&ring=58A6FF&fire=E34C26&currStreakLabel=58A6FF" width="85%"/>
+
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devRavit&layout=compact&theme=material-palenight&hide_border=true&bg_color=20232a&text_color=fff&title_color=58A6FF&count_private=true&langs_count=8" width="60%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### 🐍 Contribution Snake
 
 <img src="https://raw.githubusercontent.com/devRavit/devRavit/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 
-<br/><br/>
-
-### 📈 &nbsp;Activity Graph
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width="100%"/>
+</div>
 
 <br/>
 
-### ⏱️ &nbsp;Weekly Coding Stats
+<div align="center">
+
+### 📈 Activity Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width="100%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### ⏱️ Weekly Coding Stats
 
 <!--START_SECTION:waka-->
 **저는 저녁형 인간이에요. 🦉** 
