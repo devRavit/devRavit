@@ -56,7 +56,35 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
 
 <!--START_SECTION:waka-->
 
-[![devRavit WakaTime AI coding card](./waka.svg)](https://wakatime.com/@devRavit)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/header-dark.svg">
+  <img alt="WakaTime header" src="./cards/header-light.svg" width="840">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/hero-dark.svg">
+  <img alt="WakaTime AI hero" src="./cards/hero-light.svg" width="840">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/week-dark.svg">
+  <img alt="WakaTime week over week" src="./cards/week-light.svg" width="840">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/rhythm-dark.svg">
+  <img alt="WakaTime coding rhythm" src="./cards/rhythm-light.svg" width="840">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/stack-dark.svg">
+  <img alt="WakaTime languages and stack" src="./cards/stack-light.svg" width="840">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./cards/heatmap-dark.svg">
+  <img alt="WakaTime 30 day heatmap" src="./cards/heatmap-light.svg" width="840">
+</picture>
 
 <!--END_SECTION:waka-->
 

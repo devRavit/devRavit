@@ -1,0 +1,23 @@
+<svg width="840" height="96" viewBox="0 0 840 96" xmlns="http://www.w3.org/2000/svg" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif">
+<defs>
+<linearGradient id="g_claude" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
+<linearGradient id="g_blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#79b8ff"/></linearGradient>
+<linearGradient id="g_purple" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8B6FC9"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
+<linearGradient id="g_ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
+<linearGradient id="g_peak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
+</defs>
+<rect x="18.0" y="20.0" width="48.0" height="48.0" rx="13" fill="url(#g_blue)"/>
+<text x="42.0" y="50.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">R</text>
+<text x="80.0" y="40.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="23" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.2">devRavit</text>
+<text x="80.0" y="60.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="start">WakaTime · last week · 50 hrs 35 mins coded</text>
+<rect x="718.1" y="28.0" width="103.9" height="26.0" rx="13" fill="#11243b" stroke="#58A6FF" stroke-width="1"/>
+<circle cx="731.1" cy="41" r="3.5" fill="#58A6FF"/>
+<text x="742.1" y="45.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#c9d1d9" text-anchor="start">AI-Native</text>
+<rect x="605.2" y="28.0" width="103.9" height="26.0" rx="13" fill="#10161e" stroke="#20262e" stroke-width="1"/>
+<text x="616.2" y="45.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="start">🦉</text>
+<text x="634.2" y="45.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#c9d1d9" text-anchor="start">Night Owl</text>
+<rect x="485.2" y="28.0" width="111.0" height="26.0" rx="13" fill="#2a1a10" stroke="#D97757" stroke-width="1"/>
+<text x="496.2" y="45.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="12" font-weight="400" fill="#f0f6fc" text-anchor="start">🔥</text>
+<text x="514.2" y="45.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#c9d1d9" text-anchor="start">19d streak</text>
+<text x="822.0" y="68.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#5b6470" text-anchor="end">avg 10 hrs 7 mins / day</text>
+</svg>
