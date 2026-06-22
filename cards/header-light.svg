@@ -6,6 +6,7 @@
 <linearGradient id="g_ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
 <linearGradient id="g_peak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
 </defs>
+<rect x="1" y="6" width="838" height="84" rx="16" fill="#ffffff" stroke="#d0d7de"/>
 <rect x="18.0" y="20.0" width="48.0" height="48.0" rx="13" fill="url(#g_blue)"/>
 <text x="42.0" y="50.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">R</text>
 <text x="80.0" y="40.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="23" font-weight="700" fill="#1f2328" text-anchor="start" letter-spacing="-0.2">devRavit</text>

@@ -6,6 +6,7 @@
 <linearGradient id="g_ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
 <linearGradient id="g_peak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
 </defs>
+<rect x="1" y="6" width="838" height="133" rx="16" fill="#ffffff" stroke="#d0d7de"/>
 <text x="18.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Last 30 days</text>
 <line x1="125" y1="10" x2="726" y2="10" stroke="#d8dee4"/>
 <text x="822.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="end">19일 연속 활동 🔥</text>
