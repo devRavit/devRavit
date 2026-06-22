@@ -1,0 +1,40 @@
+name: WakaTime AI Card
+
+on:
+  schedule:
+    # 02:30 KST — waka 통계가 안정된 뒤 생성
+    - cron: '30 17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Generate WakaTime AI card
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate waka.svg
+        env:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          # 콤마구분 마스킹 단어(예: 내부 네임스페이스). 값은 시크릿에만 존재, 코드엔 없음.
+          WAKA_REDACT: ${{ secrets.WAKA_REDACT }}
+        run: python .github/scripts/waka_card.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add waka.svg
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: update WakaTime AI card"
+            git push
+          fi

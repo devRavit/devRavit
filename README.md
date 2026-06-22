@@ -52,55 +52,12 @@ InterparkTriple, Seoul/South Korea ```(04/2022 ~ )```
   <img src="https://github-readme-stats.vercel.app/api?username=devRavit&show_icons=true&theme=material-palenight&hide_border=true&bg_color=20232a&icon_color=58A6FF&text_color=fff&title_color=58A6FF&count_private=true" width=66% />
 </a>
 -->
-<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devRavit&theme=react-dark&bg_color=20232a&hide_border=true&line=58A6FF&color=58A6FF&count_private=true" width=100% />
-</a>
 <div align="center">
+
 <!--START_SECTION:waka-->
-**저는 저녁형 인간이에요. 🦉** 
 
-```text
-🌞 아침                     109 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.89 % 
-🌆 낮　                     279 commits         ████████░░░░░░░░░░░░░░░░░   30.43 % 
-🌃 저녁                     246 commits         ███████░░░░░░░░░░░░░░░░░░   26.83 % 
-🌙 밤　                     283 commits         ████████░░░░░░░░░░░░░░░░░   30.86 % 
-```
-📅 **제가 가장 생산적인 날은 일요일이에요.** 
-
-```text
-월요일                      148 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.14 % 
-화요일                      81 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.83 % 
-수요일                      114 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.43 % 
-목요일                      158 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.23 % 
-금요일                      80 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.72 % 
-토요일                      153 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.68 % 
-일요일                      183 commits         █████░░░░░░░░░░░░░░░░░░░░   19.96 % 
-```
-
-
-📊 **저는 이번주를 이렇게 시간을 보냈어요.** 
-
-```text
-💬 프로그래밍 언어들: 
-Kotlin                   34 hrs 5 mins       ███████████████░░░░░░░░░░   59.27 % 
-Markdown                 19 hrs 9 mins       ████████░░░░░░░░░░░░░░░░░   33.32 % 
-HTML                     2 hrs 33 mins       █░░░░░░░░░░░░░░░░░░░░░░░░   04.44 % 
-YAML                     1 hr 22 mins        █░░░░░░░░░░░░░░░░░░░░░░░░   02.39 % 
-Bash                     7 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.20 % 
-
-🔥 에디터들: 
-Claude Code              57 hrs 3 mins       █████████████████████████   99.23 % 
-IntelliJ IDEA            14 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.42 % 
-Obsidian                 11 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.34 % 
-
-🐱‍💻 프로젝트들: 
-bare                     32 hrs              ██████████████░░░░░░░░░░░   55.66 % 
-miner                    21 hrs 7 mins       █████████░░░░░░░░░░░░░░░░   36.75 % 
-a2022027                 1 hr 8 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   01.98 % 
-Desktop                  59 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.73 % 
-dynamic-xcheck           41 mins             ░░░░░░░░░░░░░░░░░░░░░░░░░   01.21 % 
-```
-
+[![devRavit WakaTime AI coding card](./waka.svg)](https://wakatime.com/@devRavit)
 
 <!--END_SECTION:waka-->
+
 </div>
