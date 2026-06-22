@@ -43,6 +43,8 @@ class Theme:
     sub: str
     mute: str
     faint: str
+    card_bg: str
+    card_stroke: str
     panel: str
     panel_stroke: str
     track: str
@@ -54,13 +56,15 @@ class Theme:
 DARK = Theme(
     key="dark",
     foreground="#f0f6fc", foreground2="#c9d1d9", sub="#8b949e", mute="#7d8590", faint="#5b6470",
-    panel="#10161e", panel_stroke="#20262e", track="#161b22", divider="#1c222a",
+    card_bg="#0d1117", card_stroke="#20262e",
+    panel="#161b22", panel_stroke="#283039", track="#1c222b", divider="#222a33",
     blue=BLUE_D,
     heat=("#161b22", "#0d2d4a", "#15487f", "#2f6fc0", "#58A6FF"),
 )
 LIGHT = Theme(
     key="light",
     foreground="#1f2328", foreground2="#3a424b", sub="#57606a", mute="#6e7781", faint="#9aa3ad",
+    card_bg="#ffffff", card_stroke="#d0d7de",
     panel="#f4f6f8", panel_stroke="#d8dee4", track="#e7ebef", divider="#d8dee4",
     blue=BLUE,
     heat=("#ebedf0", "#bcd7f5", "#7fb1ec", "#4a8de0", "#1f6fdb"),
@@ -441,8 +445,14 @@ BANDS = [
 def render_band(draw, data: WakaData, theme: Theme) -> str:
     canvas = Canvas(theme)
     gradients(canvas)
-    height = draw(canvas, data)
-    return wrap(canvas, height + 14)
+    bg_index = len(canvas.parts)
+    content_height = draw(canvas, data)
+    total = content_height + 14
+    # 밴드별 카드 배경 (테마 적응) — 위/아래 6px 투명 여백으로 스택 시 카드 간 간극
+    background = (f'<rect x="1" y="6" width="{WIDTH - 2}" height="{total - 12:.0f}" rx="16" '
+                 f'fill="{theme.card_bg}" stroke="{theme.card_stroke}"/>')
+    canvas.parts.insert(bg_index, background)
+    return wrap(canvas, total)
 
 
 def readme_snippet() -> str:

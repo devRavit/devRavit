@@ -6,8 +6,9 @@
 <linearGradient id="g_ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
 <linearGradient id="g_peak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
 </defs>
+<rect x="1" y="6" width="838" height="218" rx="16" fill="#0d1117" stroke="#20262e"/>
 <text x="18.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">When I code</text>
-<line x1="117" y1="10" x2="311" y2="10" stroke="#1c222a"/>
+<line x1="117" y1="10" x2="311" y2="10" stroke="#222a33"/>
 <text x="407.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">00:00–01:00</text>
 <clipPath id="todclip"><rect x="18" y="36" width="389.0" height="13" rx="6"/></clipPath>
 <g clip-path="url(#todclip)">
@@ -33,7 +34,7 @@
 <text x="34.0" y="146.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🌃 밤</text>
 <text x="407.0" y="146.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">8.2%</text>
 <text x="433.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Weekday</text>
-<line x1="499" y1="10" x2="726" y2="10" stroke="#1c222a"/>
+<line x1="499" y1="10" x2="726" y2="10" stroke="#222a33"/>
 <text x="822.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">peak 월요일</text>
 <rect x="433.0" y="36.0" width="48.7" height="110.0" rx="4" fill="url(#g_peak)"/>
 <text x="457.4" y="162.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="middle">월</text>
@@ -49,7 +50,7 @@
 <text x="740.9" y="162.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="middle">토</text>
 <rect x="773.3" y="75.1" width="48.7" height="70.9" rx="4" fill="#5b6470"/>
 <text x="797.6" y="162.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="middle">일</text>
-<rect x="18.0" y="182.0" width="804.0" height="34.0" rx="10" fill="#0e1722" stroke="#20262e" stroke-width="1"/>
+<rect x="18.0" y="182.0" width="804.0" height="34.0" rx="10" fill="#0e1722" stroke="#283039" stroke-width="1"/>
 <text x="34.0" y="204.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🏆 가장 생산적인 날</text>
 <text x="806.0" y="204.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="end">수요일 · 13 hrs 8 mins</text>
 <text x="420.0" y="204.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="middle">🔥 19일 연속 · 최장 몰입 3h 9m</text>

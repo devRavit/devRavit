@@ -6,89 +6,90 @@
 <linearGradient id="g_ring" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D97757"/><stop offset="1" stop-color="#E8A06F"/></linearGradient>
 <linearGradient id="g_peak" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
 </defs>
+<rect x="1" y="6" width="838" height="372" rx="16" fill="#0d1117" stroke="#20262e"/>
 <text x="18.0" y="14.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Languages</text>
-<line x1="101" y1="10" x2="822" y2="10" stroke="#1c222a"/>
+<line x1="101" y1="10" x2="822" y2="10" stroke="#222a33"/>
 <text x="18.0" y="45.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#c9d1d9" text-anchor="start">Kotlin</text>
-<rect x="118.0" y="37.0" width="554.0" height="9.0" rx="5" fill="#161b22"/>
+<rect x="118.0" y="37.0" width="554.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="118.0" y="37.0" width="374.8" height="9.0" rx="5" fill="url(#g_purple)"/>
 <text x="822.0" y="45.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="end">34 hrs 27 mins · 67.7%</text>
 <text x="18.0" y="67.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#c9d1d9" text-anchor="start">Markdown</text>
-<rect x="118.0" y="59.0" width="554.0" height="9.0" rx="5" fill="#161b22"/>
+<rect x="118.0" y="59.0" width="554.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="118.0" y="59.0" width="154.8" height="9.0" rx="5" fill="#3A82A8"/>
 <text x="822.0" y="67.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="end">14 hrs 14 mins · 27.9%</text>
 <text x="18.0" y="89.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#c9d1d9" text-anchor="start">HTML</text>
-<rect x="118.0" y="81.0" width="554.0" height="9.0" rx="5" fill="#161b22"/>
+<rect x="118.0" y="81.0" width="554.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="118.0" y="81.0" width="13.2" height="9.0" rx="5" fill="#D97757"/>
 <text x="822.0" y="89.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="end">1 hr 12 mins · 2.4%</text>
 <text x="18.0" y="111.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#c9d1d9" text-anchor="start">YAML</text>
-<rect x="118.0" y="103.0" width="554.0" height="9.0" rx="5" fill="#161b22"/>
+<rect x="118.0" y="103.0" width="554.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="118.0" y="103.0" width="5.8" height="9.0" rx="5" fill="#6E7681"/>
 <text x="822.0" y="111.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="end">32 mins · 1.1%</text>
 <text x="18.0" y="133.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#c9d1d9" text-anchor="start">Other</text>
-<rect x="118.0" y="125.0" width="554.0" height="9.0" rx="5" fill="#161b22"/>
+<rect x="118.0" y="125.0" width="554.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="118.0" y="125.0" width="3.8" height="9.0" rx="5" fill="#58A6FF"/>
 <text x="822.0" y="133.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="end">21 mins · 0.7%</text>
 <text x="18.0" y="152.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Editors</text>
-<line x1="84" y1="148" x2="407" y2="148" stroke="#1c222a"/>
+<line x1="84" y1="148" x2="407" y2="148" stroke="#222a33"/>
 <text x="18.0" y="182.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">Claude Code</text>
-<rect x="108.0" y="175.0" width="251.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="108.0" y="175.0" width="251.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="108.0" y="175.0" width="247.4" height="8.0" rx="4" fill="url(#g_claude)"/>
 <text x="407.0" y="182.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#7d8590" text-anchor="end">98.5%</text>
 <text x="18.0" y="206.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">Warp</text>
-<rect x="108.0" y="199.0" width="251.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="108.0" y="199.0" width="251.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="108.0" y="199.0" width="1.6" height="8.0" rx="4" fill="#5b6470"/>
 <text x="407.0" y="206.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">0.6%</text>
 <text x="18.0" y="230.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">IntelliJ IDEA</text>
-<rect x="108.0" y="223.0" width="251.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="108.0" y="223.0" width="251.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="108.0" y="223.0" width="1.0" height="8.0" rx="4" fill="#5b6470"/>
 <text x="407.0" y="230.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">0.4%</text>
 <text x="18.0" y="254.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">Obsidian</text>
-<rect x="108.0" y="247.0" width="251.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="108.0" y="247.0" width="251.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="108.0" y="247.0" width="1.0" height="8.0" rx="4" fill="#5b6470"/>
 <text x="407.0" y="254.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">0.4%</text>
 <text x="433.0" y="152.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Projects</text>
-<line x1="508" y1="148" x2="822" y2="148" stroke="#1c222a"/>
+<line x1="508" y1="148" x2="822" y2="148" stroke="#222a33"/>
 <text x="433.0" y="182.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">bare</text>
-<rect x="519.0" y="175.0" width="255.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="519.0" y="175.0" width="255.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="519.0" y="175.0" width="139.1" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="822.0" y="182.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#7d8590" text-anchor="end">54.5%</text>
 <text x="433.0" y="206.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">miner</text>
-<rect x="519.0" y="199.0" width="255.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="519.0" y="199.0" width="255.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="519.0" y="199.0" width="101.3" height="8.0" rx="4" fill="url(#g_purple)"/>
 <text x="822.0" y="206.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#7d8590" text-anchor="end">39.7%</text>
 <text x="433.0" y="230.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">a20****7</text>
-<rect x="519.0" y="223.0" width="255.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="519.0" y="223.0" width="255.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="519.0" y="223.0" width="5.8" height="8.0" rx="4" fill="#5b6470"/>
 <text x="822.0" y="230.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">2.3%</text>
 <text x="433.0" y="254.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">dynamic-xche</text>
-<rect x="519.0" y="247.0" width="255.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="519.0" y="247.0" width="255.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="519.0" y="247.0" width="3.5" height="8.0" rx="4" fill="#5b6470"/>
 <text x="822.0" y="254.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">1.4%</text>
 <text x="18.0" y="284.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.4" style="text-transform:uppercase">Dependencies</text>
-<line x1="125" y1="280" x2="726" y2="280" stroke="#1c222a"/>
+<line x1="125" y1="280" x2="726" y2="280" stroke="#222a33"/>
 <text x="822.0" y="284.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">detected libraries</text>
 <text x="18.0" y="314.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">co****l</text>
-<rect x="168.0" y="307.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="168.0" y="307.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="168.0" y="307.0" width="46.2" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="407.0" y="314.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">24%</text>
 <text x="433.0" y="314.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">io.kotest</text>
-<rect x="583.0" y="307.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="583.0" y="307.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="583.0" y="307.0" width="32.8" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="822.0" y="314.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">17%</text>
 <text x="18.0" y="338.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">org.springframework</text>
-<rect x="168.0" y="331.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="168.0" y="331.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="168.0" y="331.0" width="22.2" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="407.0" y="338.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">11%</text>
 <text x="433.0" y="338.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">run.ravit</text>
-<rect x="583.0" y="331.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="583.0" y="331.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="583.0" y="331.0" width="20.6" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="822.0" y="338.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">11%</text>
 <text x="18.0" y="362.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">kotlinx.coroutines</text>
-<rect x="168.0" y="355.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="168.0" y="355.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="168.0" y="355.0" width="16.3" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="407.0" y="362.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">8%</text>
 <text x="433.0" y="362.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">com.fasterxml</text>
-<rect x="583.0" y="355.0" width="195.0" height="8.0" rx="4" fill="#161b22"/>
+<rect x="583.0" y="355.0" width="195.0" height="8.0" rx="4" fill="#1c222b"/>
 <rect x="583.0" y="355.0" width="10.3" height="8.0" rx="4" fill="url(#g_blue)"/>
 <text x="822.0" y="362.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="end">5%</text>
 </svg>
