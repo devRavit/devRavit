@@ -20,6 +20,11 @@ from waka_data import collect, WakaData
 WIDTH = 840
 PAD = 18
 INNER = WIDTH - PAD * 2
+PAD_IN = 18          # 카드 내부 패딩
+GAP = 14             # 영역 카드 세로 간격
+HGAP = 16            # 좌우 카드 간격
+TOP = 7              # 밴드 상/하 여백
+HALF = (INNER - HGAP) / 2
 
 SANS = "'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif"
 MONO = "'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace"
@@ -127,6 +132,14 @@ class Canvas:
         if filled > 0:
             self.rect(x, y, filled, height, fill, radius)
 
+    def card(self, x, y, width, height):
+        self.rect(x, y, width, height, self.theme.card_bg, radius=14, stroke=self.theme.card_stroke)
+
+    def ctitle(self, x, y, title, right=None, right_x=None):
+        self.text(x, y, title, 11, self.theme.blue, 600, MONO, spacing="1.3", upper=True)
+        if right is not None and right_x is not None:
+            self.text(right_x, y, right, 10, self.theme.mute, 500, MONO, anchor="end")
+
     def section(self, y, title, right=None, x=PAD, width=INNER):
         self.text(x, y, title, 12, self.theme.blue, 600, MONO, spacing="1.4", upper=True)
         title_end = x + 9 + len(title) * 8.2
@@ -167,25 +180,32 @@ def wrap(canvas: Canvas, height: float) -> str:
 
 def band_header(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    y = 34
-    canvas.rect(PAD, y - 14, 48, 48, "url(#g_blue)", radius=13)
-    canvas.text(PAD + 24, y + 16, "R", 21, "#fff", 700, SANS, anchor="middle")
-    canvas.text(PAD + 62, y + 6, "devRavit", 23, theme.foreground, 700, SANS, spacing="-0.2")
-    canvas.text(PAD + 62, y + 26, f"WakaTime · {data.range_text} · {data.total_text} coded",
+    h = 72
+    canvas.card(PAD, TOP, INNER, h)
+    ix = PAD + PAD_IN
+    av = 46
+    avy = TOP + (h - av) / 2
+    canvas.rect(ix, avy, av, av, "url(#g_blue)", radius=13)
+    canvas.text(ix + av / 2, avy + 30, "R", 20, "#fff", 700, SANS, anchor="middle")
+    tx = ix + av + 14
+    canvas.text(tx, TOP + 30, "devRavit", 22, theme.foreground, 700, SANS, spacing="-0.2")
+    canvas.text(tx, TOP + 49, f"WakaTime · {data.range_text} · {data.total_text} coded",
                 12, theme.mute, 500, MONO)
-    right = PAD + INNER
+    right = PAD + INNER - PAD_IN
 
     def badge(x, label, fill, border, dot=None, emoji=None):
         width = 24 + len(label) * 7.1 + (16 if dot or emoji else 0)
-        canvas.rect(x - width, y - 6, width, 26, fill, radius=13, stroke=border)
+        top = TOP + 13
+        canvas.rect(x - width, top, width, 26, fill, radius=13, stroke=border)
         cursor = x - width + 13
+        baseline = top + 17
         if dot:
-            canvas.add(f'<circle cx="{cursor}" cy="{y + 7:.0f}" r="3.5" fill="{dot}"/>')
+            canvas.add(f'<circle cx="{cursor}" cy="{top + 13:.0f}" r="3.5" fill="{dot}"/>')
             cursor += 11
         if emoji:
-            canvas.text(cursor - 2, y + 11, emoji, 12, theme.foreground, 400, SANS)
+            canvas.text(cursor - 2, baseline, emoji, 12, theme.foreground, 400, SANS)
             cursor += 16
-        canvas.text(cursor, y + 11, label, 11, theme.foreground2, 600, MONO)
+        canvas.text(cursor, baseline, label, 11, theme.foreground2, 600, MONO)
         return x - width - 9
 
     badge_bg = "#11243b" if theme.key == "dark" else "#dbeafe"
@@ -193,22 +213,19 @@ def band_header(canvas: Canvas, data: WakaData) -> float:
     nxt = badge(nxt, "Night Owl", theme.panel, theme.panel_stroke, emoji="🦉")
     streak_bg = "#2a1a10" if theme.key == "dark" else "#fbe9df"
     badge(nxt, f"{data.streak}d streak", streak_bg, CLAUDE, emoji="🔥")
-    canvas.text(right, y + 34, f"avg {data.daily_avg_text} / day", 11, theme.faint, 500, MONO, anchor="end")
-    return y + 48
+    canvas.text(right, TOP + 54, f"avg {data.daily_avg_text} / day", 11, theme.faint, 500, MONO, anchor="end")
+    return TOP + h
 
 
 def band_hero(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    y = 14
-    hero_h = 150
-    hero_bg = "#1a130f" if theme.key == "dark" else "#fbf1ea"
-    hero_stroke = "#3a2a20" if theme.key == "dark" else "#f0d9cb"
-    canvas.rect(PAD, y, INNER, hero_h, hero_bg, radius=16, stroke=hero_stroke)
-    cx, cy, r = PAD + 75, y + hero_h / 2, 52
+    y = TOP
+    hero_h = 132
+    # 히어로(AI 링)는 배경 없음 — 투명
+    cx, cy, r = PAD + PAD_IN + 52, y + hero_h / 2, 52
     circ = 2 * math.pi * r
     offset = circ * (1 - data.ai_coding_pct / 100.0)
-    ring_track = "#241a14" if theme.key == "dark" else "#f2ddd0"
-    canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="{ring_track}" stroke-width="13"/>')
+    canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="{theme.track}" stroke-width="13"/>')
     canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="url(#g_ring)" stroke-width="13" '
                f'stroke-linecap="round" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{offset:.1f}" '
                f'transform="rotate(-90 {cx} {cy:.0f})"/>')
@@ -216,64 +233,67 @@ def band_hero(canvas: Canvas, data: WakaData) -> float:
                 anchor="middle", spacing="-1")
     canvas.text(cx, cy + 16, "% AI-DRIVEN", 9, CLAUDE2, 600, MONO, anchor="middle", spacing="1")
 
-    bx = PAD + 160
-    bw = INNER - 160 - 28
-    canvas.text(bx, y + 30, "거의 모든 코드를 Claude와 함께 작성했어요", 16, theme.foreground, 600, SANS)
+    bx = PAD + PAD_IN + 150
+    bright = PAD + INNER - PAD_IN
+    bw = bright - bx
+    canvas.text(bx, y + 28, "거의 모든 코드를 Claude와 함께 작성했어요", 16, theme.foreground, 600, SANS)
     total = max(1, data.ai_lines + data.human_lines)
     ai_pct = data.ai_lines / total * 100
     human_pct = data.human_lines / total * 100
-    row = y + 52
+    row = y + 54
     canvas.add(f'<circle cx="{bx + 4}" cy="{row - 4}" r="4" fill="{CLAUDE}"/>')
     canvas.text(bx + 16, row, "AI", 13, theme.sub, 500, MONO)
     canvas.text(bx + 42, row, fmt_count(data.ai_lines), 15, theme.foreground, 700, SANS)
-    canvas.text(bx + bw, row, f"{ai_pct:.0f}%", 13, theme.foreground2, 600, MONO, anchor="end")
+    canvas.text(bright, row, f"{ai_pct:.0f}%", 13, theme.foreground2, 600, MONO, anchor="end")
     canvas.bar(bx, row + 8, bw, 9, ai_pct, "url(#g_claude)", radius=5)
     row += 36
     canvas.add(f'<circle cx="{bx + 4}" cy="{row - 4}" r="4" fill="{GREEN}"/>')
     canvas.text(bx + 16, row, "Human", 13, theme.sub, 500, MONO)
     canvas.text(bx + 64, row, fmt_count(data.human_lines), 15, theme.foreground, 700, SANS)
-    canvas.text(bx + bw, row, f"{human_pct:.0f}%", 13, theme.mute, 600, MONO, anchor="end")
+    canvas.text(bright, row, f"{human_pct:.0f}%", 13, theme.mute, 600, MONO, anchor="end")
     canvas.bar(bx, row + 8, bw, 9, human_pct, GREEN, radius=5)
 
-    y += hero_h + 16
+    y += hero_h + GAP
     tiles = [
         (fmt_count(data.ai_lines), "AI line changes", None),
         (fmt_count(data.tokens_in), f"tokens in · {fmt_count(data.tokens_out)} out", "B"),
         (fmt_money(data.est_cost), "est. cost · 7 days", None),
         (f"{data.lines_per_prompt:.0f}", "lines / prompt", None),
     ]
-    tile_w = (INNER - 13 * 3) / 4
+    tile_gap = 12
+    tile_w = (INNER - tile_gap * 3) / 4
     for index, (value, label, suffix) in enumerate(tiles):
-        tx = PAD + index * (tile_w + 13)
-        canvas.rect(tx, y, tile_w, 70, theme.panel, radius=13, stroke=theme.panel_stroke)
-        canvas.text(tx + 16, y + 30, value, 25, theme.foreground, 700, SANS, spacing="-0.5")
+        tx = PAD + index * (tile_w + tile_gap)
+        canvas.card(tx, y, tile_w, 72)
+        canvas.text(tx + PAD_IN, y + 32, value, 25, theme.foreground, 700, SANS, spacing="-0.5")
         if suffix:
-            canvas.text(tx + 16 + len(value) * 15.5, y + 30, suffix, 16, theme.blue, 700, SANS)
-        canvas.text(tx + 16, y + 52, label, 11, theme.mute, 500, MONO)
-    return y + 70 + 6
+            canvas.text(tx + PAD_IN + len(value) * 15.5, y + 32, suffix, 16, theme.blue, 700, SANS)
+        canvas.text(tx + PAD_IN, y + 54, label, 11, theme.mute, 500, MONO)
+    return y + 72
 
 
 def band_week(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    y = 14
-    box_h = 132
-    canvas.rect(PAD, y, INNER, box_h, theme.panel, radius=14, stroke=theme.panel_stroke)
-    canvas.text(PAD + 20, y + 26, "THIS WEEK vs LAST WEEK", 11, theme.faint, 600, MONO, spacing="1.2", upper=True)
+    y = TOP
+    wow_h = 130
+    canvas.card(PAD, y, INNER, wow_h)
+    ix = PAD + PAD_IN
+    iright = PAD + INNER - PAD_IN
+    canvas.ctitle(ix, y + 24, "THIS WEEK vs LAST WEEK",
+                  right=f"{data.wow_time[0] / 3600:.0f}h vs {data.wow_time[1] / 3600:.0f}h", right_x=iright)
     delta, color = fmt_delta(data.wow_time[2], theme)
-    canvas.text(PAD + 20, y + 52, delta, 22, color, 700, SANS, spacing="-0.5")
-    canvas.text(PAD + 20 + len(delta) * 14 + 12, y + 52, "coding time", 12, theme.sub, 500, MONO)
-    canvas.text(PAD + INNER - 20, y + 26,
-                f"{data.wow_time[0] / 3600:.0f}h vs {data.wow_time[1] / 3600:.0f}h",
-                12, theme.mute, 500, MONO, anchor="end")
+    canvas.text(ix, y + 50, delta, 22, color, 700, SANS, spacing="-0.5")
+    canvas.text(ix + len(delta) * 14 + 12, y + 50, "coding time", 12, theme.sub, 500, MONO)
     rows = [
         ("Coding time", data.wow_time[0] / 3600, data.wow_time[1] / 3600, data.wow_time[2], "h", theme.blue),
         ("AI lines", data.wow_ai_lines[0], data.wow_ai_lines[1], data.wow_ai_lines[2], "#", CLAUDE),
         ("Tokens", data.wow_tokens[0], data.wow_tokens[1], data.wow_tokens[2], "t", PURPLE),
     ]
-    col_w = (INNER - 40 - 40) / 3
-    ry = y + 72
+    inner_w = INNER - 2 * PAD_IN
+    col_w = (inner_w - 2 * 20) / 3
+    ry = y + 74
     for index, (label, current, previous, percent, kind, color) in enumerate(rows):
-        rx = PAD + 20 + index * (col_w + 20)
+        rx = ix + index * (col_w + 20)
         current_text = f"{current:.0f}h" if kind == "h" else fmt_count(current)
         previous_text = f"{previous:.0f}h" if kind == "h" else fmt_count(previous)
         delta_text, delta_color = fmt_delta(percent, theme)
@@ -282,154 +302,192 @@ def band_week(canvas: Canvas, data: WakaData) -> float:
         canvas.bar(rx, ry + 8, col_w, 6, 100, color, radius=3)
         ratio = (previous / current * 100) if current else 0
         canvas.bar(rx, ry + 18, col_w, 6, ratio, theme.faint, radius=3)
-        canvas.text(rx, ry + 38, f"now {current_text}", 10, theme.mute, 500, MONO)
-        canvas.text(rx + col_w, ry + 38, f"prev {previous_text}", 10, theme.faint, 500, MONO, anchor="end")
+        canvas.text(rx, ry + 36, f"now {current_text}", 10, theme.mute, 500, MONO)
+        canvas.text(rx + col_w, ry + 36, f"prev {previous_text}", 10, theme.faint, 500, MONO, anchor="end")
 
-    y += box_h + 22
-    y = canvas.section(y, "AI Agents", "lines · est. cost")
-    half = (INNER - 26) / 2
+    y += wow_h + GAP
+    comp_h = 98
+    # AI Agent (left)
+    canvas.card(PAD, y, HALF, comp_h)
+    aix = PAD + PAD_IN
+    aright = PAD + HALF - PAD_IN
     name, lines, cost = (data.agents[0] if data.agents else ("Claude", data.ai_lines, data.est_cost))
-    canvas.rect(PAD, y, half, 78, theme.panel, radius=13, stroke=theme.panel_stroke)
-    canvas.rect(PAD + 18, y + 16, 18, 18, CLAUDE, radius=6)
-    canvas.text(PAD + 27, y + 29, name[0], 11, "#fff", 700, SANS, anchor="middle")
-    canvas.text(PAD + 44, y + 30, name, 14, theme.foreground, 600, SANS)
-    canvas.text(PAD + half - 18, y + 30, fmt_money(cost), 13, theme.foreground2, 600, MONO, anchor="end")
-    canvas.text(PAD + 18, y + 56, "lines", 10, theme.faint, 500, MONO)
-    canvas.bar(PAD + 56, y + 49, half - 56 - 80, 7, 100, "url(#g_claude)", radius=4)
-    canvas.text(PAD + half - 18, y + 55, f"{lines:,}", 11, theme.foreground2, 600, MONO, anchor="end")
-
-    mx = PAD + half + 26
-    canvas.rect(mx, y, half, 78, theme.panel, radius=13, stroke=theme.panel_stroke)
-    canvas.text(mx + 18, y + 26, "MACHINES", 10, theme.faint, 600, MONO, spacing="1", upper=True)
-    my = y + 46
+    canvas.ctitle(aix, y + 24, "AI AGENT", right="lines · cost", right_x=aright)
+    canvas.rect(aix, y + 38, 18, 18, CLAUDE, radius=6)
+    canvas.text(aix + 9, y + 51, name[0], 11, "#fff", 700, SANS, anchor="middle")
+    canvas.text(aix + 26, y + 52, name, 14, theme.foreground, 600, SANS)
+    canvas.text(aright, y + 52, fmt_money(cost), 13, theme.foreground2, 600, MONO, anchor="end")
+    canvas.text(aix, y + 78, "lines", 10, theme.faint, 500, MONO)
+    canvas.bar(aix + 40, y + 71, HALF - 2 * PAD_IN - 40 - 70, 7, 100, "url(#g_claude)", radius=4)
+    canvas.text(aright, y + 77, f"{lines:,}", 11, theme.foreground2, 600, MONO, anchor="end")
+    # Machines (right)
+    mx = PAD + HALF + HGAP
+    canvas.card(mx, y, HALF, comp_h)
+    mix = mx + PAD_IN
+    mright = mx + HALF - PAD_IN
+    canvas.ctitle(mix, y + 24, "MACHINES")
+    rowy = y + 50
     for index, (machine, percent, _) in enumerate(data.machines[:2]):
         label = machine.split(".")[0].replace("ui-MacBookPro", "")[:14]
-        canvas.text(mx + 18, my, label, 11, theme.foreground2, 500, MONO)
-        canvas.bar(mx + 18, my + 6, half - 36 - 50, 6, percent,
+        canvas.text(mix, rowy, label, 11, theme.foreground2, 500, MONO)
+        canvas.bar(mix + 84, rowy - 7, HALF - 2 * PAD_IN - 84 - 44, 6, percent,
                    "url(#g_blue)" if index == 0 else theme.faint, radius=3)
-        canvas.text(mx + half - 18, my, f"{percent:.0f}%", 11, theme.mute, 600, MONO, anchor="end")
-        my += 22
-    return y + 78
+        canvas.text(mright, rowy, f"{percent:.0f}%", 11, theme.mute, 600, MONO, anchor="end")
+        rowy += 24
+    return y + comp_h
 
 
 def band_rhythm(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    half = (INNER - 26) / 2
-    col_split = PAD + half + 26
-    top = 14
-    y2 = canvas.section(top, "When I code", data.peak_hour_text, x=PAD, width=half)
-    colors5 = ["#4C5FD5", "#E0A14B", canvas.theme.blue, "#A371F7", "#7C4DD0"]
-    canvas.add(f'<clipPath id="todclip"><rect x="{PAD}" y="{y2}" width="{half:.1f}" height="13" rx="6"/></clipPath>')
+    y = TOP
+    comp_h = 156
+    # When I code (left)
+    canvas.card(PAD, y, HALF, comp_h)
+    wix = PAD + PAD_IN
+    wright = PAD + HALF - PAD_IN
+    ww = HALF - 2 * PAD_IN
+    canvas.ctitle(wix, y + 24, "WHEN I CODE", right=data.peak_hour_text, right_x=wright)
+    colors5 = ["#4C5FD5", "#E0A14B", theme.blue, "#A371F7", "#7C4DD0"]
+    bar_y = y + 34
+    canvas.add(f'<clipPath id="todclip"><rect x="{wix}" y="{bar_y}" width="{ww:.1f}" height="12" rx="6"/></clipPath>')
     canvas.add('<g clip-path="url(#todclip)">')
-    cursor = PAD
+    cursor = wix
     for index, (_, _, _, percent) in enumerate(data.time_of_day):
-        width = half * percent / 100
-        canvas.rect(cursor, y2, width + 0.5, 13, colors5[index])
-        cursor += width
+        seg = ww * percent / 100
+        canvas.rect(cursor, bar_y, seg + 0.5, 12, colors5[index])
+        cursor += seg
     canvas.add('</g>')
-    line_y = y2 + 30
+    line_y = y + 62
     for index, (label, emoji, _, percent) in enumerate(data.time_of_day):
-        canvas.rect(PAD, line_y - 9, 9, 9, colors5[index], radius=3)
-        canvas.text(PAD + 16, line_y, f"{emoji} {label}", 12, theme.foreground2, 500, MONO)
-        canvas.text(PAD + half, line_y, f"{percent:.1f}%", 12, theme.foreground2, 600, MONO, anchor="end")
-        line_y += 20
-
-    canvas.section(top, "Weekday", f"peak {data.peak_weekday}요일", x=col_split, width=half)
+        canvas.rect(wix, line_y - 9, 9, 9, colors5[index], radius=3)
+        canvas.text(wix + 16, line_y, f"{emoji} {label}", 12, theme.foreground2, 500, MONO)
+        canvas.text(wright, line_y, f"{percent:.1f}%", 12, theme.foreground2, 600, MONO, anchor="end")
+        line_y += 18
+    # Weekday (right)
+    mx = PAD + HALF + HGAP
+    canvas.card(mx, y, HALF, comp_h)
+    mix = mx + PAD_IN
+    mright = mx + HALF - PAD_IN
+    canvas.ctitle(mix, y + 24, "WEEKDAY", right=f"peak {data.peak_weekday}요일", right_x=mright)
     weekday_max = max((w[1] for w in data.weekdays), default=1) or 1
-    bars_y = top + 22
-    bar_area = 110
+    bars_y = y + 40
+    bar_area = 78
     gap = 8
-    bar_w = (half - gap * 6) / 7
+    bw = (HALF - 2 * PAD_IN - gap * 6) / 7
     for index, (label, seconds, _, peak) in enumerate(data.weekdays):
         height = max(4, (seconds / weekday_max) * bar_area)
-        bx = col_split + index * (bar_w + gap)
+        bxx = mix + index * (bw + gap)
         by = bars_y + bar_area - height
         fill = "url(#g_peak)" if peak else theme.faint
-        canvas.rect(bx, by, bar_w, height, fill, radius=4)
-        canvas.text(bx + bar_w / 2, bars_y + bar_area + 16, label, 11,
+        canvas.rect(bxx, by, bw, height, fill, radius=4)
+        canvas.text(bxx + bw / 2, bars_y + bar_area + 16, label, 11,
                     theme.blue if peak else theme.mute, 600 if peak else 500, MONO, anchor="middle")
 
-    y = top + max(line_y - top, bars_y + bar_area + 16 - top) + 16
-    badge_bg = "#0e1722" if theme.key == "dark" else "#eef3f8"
-    canvas.rect(PAD, y, INNER, 34, badge_bg, radius=10, stroke=theme.panel_stroke)
-    canvas.text(PAD + 16, y + 22, "🏆 가장 생산적인 날", 12, theme.foreground2, 500, MONO)
-    canvas.text(PAD + INNER - 16, y + 22, data.best_day_text, 12, theme.blue, 600, MONO, anchor="end")
-    canvas.text(PAD + INNER / 2, y + 22,
+    y += comp_h + GAP
+    bd_h = 48
+    canvas.card(PAD, y, INNER, bd_h)
+    canvas.text(PAD + PAD_IN, y + 28, "🏆 가장 생산적인 날", 12, theme.foreground2, 500, MONO)
+    canvas.text(PAD + INNER - PAD_IN, y + 28, data.best_day_text, 12, theme.blue, 600, MONO, anchor="end")
+    canvas.text(PAD + INNER / 2, y + 28,
                 f"🔥 {data.streak}일 연속 · 최장 몰입 {data.longest_session_text}",
                 12, theme.mute, 500, MONO, anchor="middle")
-    return y + 34
+    return y + bd_h
 
 
 def band_stack(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    half = (INNER - 26) / 2
-    col_split = PAD + half + 26
-    y = canvas.section(14, "Languages")
+    y = TOP
+    # Languages (full width card)
+    lang_h = 46 + (len(data.languages) - 1) * 22 + 9 + 18
+    canvas.card(PAD, y, INNER, lang_h)
+    lix = PAD + PAD_IN
+    lright = PAD + INNER - PAD_IN
+    lw = INNER - 2 * PAD_IN
+    canvas.ctitle(lix, y + 24, "LANGUAGES")
+    ly = y + 46
     lang_colors = ["url(#g_purple)", "#3A82A8", CLAUDE, "#6E7681", theme.blue]
     for index, (name, percent, text) in enumerate(data.languages):
-        canvas.text(PAD, y + 9, name, 13, theme.foreground2, 500, MONO)
-        canvas.bar(PAD + 100, y + 1, INNER - 100 - 150, 9, percent, lang_colors[index % 5], radius=5)
-        canvas.text(PAD + INNER, y + 9, f"{text} · {percent:.1f}%", 12, theme.mute, 500, MONO, anchor="end")
-        y += 22
+        canvas.text(lix, ly + 9, name, 13, theme.foreground2, 500, MONO)
+        canvas.bar(lix + 96, ly + 1, lw - 96 - 150, 9, percent, lang_colors[index % 5], radius=5)
+        canvas.text(lright, ly + 9, f"{text} · {percent:.1f}%", 12, theme.mute, 500, MONO, anchor="end")
+        ly += 22
+    y += lang_h + GAP
 
-    y += 6
-    base = y
-    y2 = canvas.section(y, "Editors", x=PAD, width=half)
+    # Editors (left) + Projects (right)
+    comp_h = 48 + 3 * 24 + 8 + 18
+    canvas.card(PAD, y, HALF, comp_h)
+    eix = PAD + PAD_IN
+    eright = PAD + HALF - PAD_IN
+    canvas.ctitle(eix, y + 24, "EDITORS")
+    ey = y + 48
     for index, (name, percent, _) in enumerate(data.editors):
-        canvas.text(PAD, y2 + 8, name[:14], 12, theme.foreground2, 500, MONO)
-        canvas.bar(PAD + 90, y2 + 1, half - 90 - 48, 8, percent,
+        canvas.text(eix, ey + 8, name[:14], 12, theme.foreground2, 500, MONO)
+        canvas.bar(eix + 90, ey + 1, HALF - 2 * PAD_IN - 90 - 48, 8, percent,
                    "url(#g_claude)" if index == 0 else theme.faint, radius=4)
-        canvas.text(PAD + half, y2 + 8, f"{percent:.1f}%", 11, theme.mute, 600 if index == 0 else 500,
-                    MONO, anchor="end")
-        y2 += 24
-    yp = canvas.section(base, "Projects", x=col_split, width=half)
+        canvas.text(eright, ey + 8, f"{percent:.1f}%", 11, theme.mute, 600 if index == 0 else 500, MONO, anchor="end")
+        ey += 24
+    mx = PAD + HALF + HGAP
+    canvas.card(mx, y, HALF, comp_h)
+    pix = mx + PAD_IN
+    pright = mx + HALF - PAD_IN
+    canvas.ctitle(pix, y + 24, "PROJECTS")
+    py = y + 48
     project_colors = ["url(#g_blue)", "url(#g_purple)", theme.faint, theme.faint]
     for index, (name, percent, _) in enumerate(data.projects[:4]):
-        canvas.text(col_split, yp + 8, name[:12], 12, theme.foreground2, 500, MONO)
-        canvas.bar(col_split + 86, yp + 1, half - 86 - 48, 8, percent, project_colors[index], radius=4)
-        canvas.text(col_split + half, yp + 8, f"{percent:.1f}%", 11, theme.mute, 600 if index < 2 else 500,
-                    MONO, anchor="end")
-        yp += 24
-    y = max(y2, yp) + 14
+        canvas.text(pix, py + 8, name[:12], 12, theme.foreground2, 500, MONO)
+        canvas.bar(pix + 86, py + 1, HALF - 2 * PAD_IN - 86 - 48, 8, percent, project_colors[index], radius=4)
+        canvas.text(pright, py + 8, f"{percent:.1f}%", 11, theme.mute, 600 if index < 2 else 500, MONO, anchor="end")
+        py += 24
+    y += comp_h + GAP
 
-    y = canvas.section(y, "Dependencies", "detected libraries")
-    dep_w = (INNER - 26) / 2
+    # Dependencies (full width card)
+    dep_rows = (len(data.dependencies[:6]) + 1) // 2
+    dep_h = 48 + (dep_rows - 1) * 24 + 18
+    canvas.card(PAD, y, INNER, dep_h)
+    dix = PAD + PAD_IN
+    canvas.ctitle(dix, y + 24, "DEPENDENCIES", right="detected libraries", right_x=PAD + INNER - PAD_IN)
+    dep_col_w = (INNER - 2 * PAD_IN - HGAP) / 2
+    dy0 = y + 48
     for index, (name, percent, _) in enumerate(data.dependencies[:6]):
         column = index % 2
         rownum = index // 2
-        dx = PAD + column * (dep_w + 26)
-        dy = y + rownum * 24
-        canvas.text(dx, dy + 8, name[:20], 12, theme.foreground2, 500, MONO)
-        canvas.bar(dx + 150, dy + 1, dep_w - 150 - 44, 8, percent, "url(#g_blue)", radius=4)
-        canvas.text(dx + dep_w, dy + 8, f"{percent:.0f}%", 11, theme.mute, 500, MONO, anchor="end")
-    return y + ((len(data.dependencies[:6]) + 1) // 2) * 24 - 8
+        dx = dix + column * (dep_col_w + HGAP)
+        dy = dy0 + rownum * 24
+        canvas.text(dx, dy, name[:20], 12, theme.foreground2, 500, MONO)
+        canvas.bar(dx + 150, dy - 7, dep_col_w - 150 - 40, 8, percent, "url(#g_blue)", radius=4)
+        canvas.text(dx + dep_col_w, dy, f"{percent:.0f}%", 11, theme.mute, 500, MONO, anchor="end")
+    return y + dep_h
 
 
 def band_heatmap(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
-    y = canvas.section(14, "Last 30 days", f"{data.streak}일 연속 활동 🔥")
+    y = TOP
+    hix = PAD + PAD_IN
+    hright = PAD + INNER - PAD_IN
+    hw = INNER - 2 * PAD_IN
     count = len(data.heatmap)
     gap = 5
-    cell = (INNER - gap * (count - 1)) / count
+    cell = (hw - gap * (count - 1)) / count
+    hm_h = 104 + cell
+    canvas.card(PAD, y, INNER, hm_h)
+    canvas.ctitle(hix, y + 24, "LAST 30 DAYS", right=f"{data.streak}일 연속 활동 🔥", right_x=hright)
+    cells_y = y + 38
     for index, (_, _, level) in enumerate(data.heatmap):
-        hx = PAD + index * (cell + gap)
-        canvas.rect(hx, y, cell, cell, theme.heat[level], radius=3)
-    y += cell + 12
-    canvas.text(PAD, y + 8, "Less", 10, theme.faint, 500, MONO)
-    lx = PAD + 34
+        hx = hix + index * (cell + gap)
+        canvas.rect(hx, cells_y, cell, cell, theme.heat[level], radius=3)
+    legend_y = cells_y + cell + 14
+    canvas.text(hix, legend_y + 9, "Less", 10, theme.faint, 500, MONO)
+    lx = hix + 36
     for level in range(5):
-        canvas.rect(lx, y, 11, 11, theme.heat[level], radius=3)
+        canvas.rect(lx, legend_y + 1, 11, 11, theme.heat[level], radius=3)
         lx += 15
-    canvas.text(lx + 4, y + 8, "More", 10, theme.faint, 500, MONO)
-
-    y += 11 + 20
-    canvas.add(f'<line x1="{PAD}" y1="{y}" x2="{PAD + INNER}" y2="{y}" stroke="{theme.divider}"/>')
-    y += 18
+    canvas.text(lx + 4, legend_y + 9, "More", 10, theme.faint, 500, MONO)
+    foot_y = legend_y + 32
     owl = "저녁형" if data.late_night_pct < 25 else "새벽형"
-    canvas.text(PAD, y, f"저는 {owl} 인간이에요 🦉 · 피크 {data.peak_hour_text} · 평균 {data.daily_avg_text}/day",
+    canvas.text(hix, foot_y, f"저는 {owl} 인간이에요 🦉 · 피크 {data.peak_hour_text} · 평균 {data.daily_avg_text}/day",
                 11, theme.mute, 500, MONO)
-    canvas.text(PAD + INNER, y, "powered by WakaTime", 10, theme.faint, 500, MONO, anchor="end")
-    return y + 12
+    canvas.text(hright, foot_y, "powered by WakaTime", 10, theme.faint, 500, MONO, anchor="end")
+    return y + hm_h
 
 
 BANDS = [
@@ -445,14 +503,8 @@ BANDS = [
 def render_band(draw, data: WakaData, theme: Theme) -> str:
     canvas = Canvas(theme)
     gradients(canvas)
-    bg_index = len(canvas.parts)
     content_height = draw(canvas, data)
-    total = content_height + 14
-    # 밴드별 카드 배경 (테마 적응) — 위/아래 6px 투명 여백으로 스택 시 카드 간 간극
-    background = (f'<rect x="1" y="6" width="{WIDTH - 2}" height="{total - 12:.0f}" rx="16" '
-                 f'fill="{theme.card_bg}" stroke="{theme.card_stroke}"/>')
-    canvas.parts.insert(bg_index, background)
-    return wrap(canvas, total)
+    return wrap(canvas, content_height + TOP)
 
 
 def readme_snippet() -> str:
