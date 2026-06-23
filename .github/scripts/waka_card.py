@@ -91,6 +91,18 @@ def fmt_count(number: float) -> str:
     return f"{int(number)}"
 
 
+def split_count(number: float) -> tuple[str, str]:
+    """숫자를 (mantissa, 단위) 로 분리. 단위는 일관된 작은 스타일로 별도 렌더."""
+    number = float(number)
+    if number >= 1e9:
+        return f"{number / 1e9:.2f}", "B"
+    if number >= 1e6:
+        return f"{number / 1e6:.1f}", "M"
+    if number >= 1e3:
+        return f"{number / 1e3:.1f}", "K"
+    return f"{int(number)}", ""
+
+
 def fmt_money(number: float) -> str:
     return "$" + f"{number:,.0f}"
 
@@ -110,13 +122,14 @@ class Canvas:
         self.parts.append(markup)
 
     def text(self, x, y, value, size=12, color=None, weight=400, family=MONO,
-             anchor="start", spacing=None, upper=False):
+             anchor="start", spacing=None, upper=False, opacity=None):
         color = color or self.theme.foreground
         letter = f' letter-spacing="{spacing}"' if spacing else ""
         transform = ' style="text-transform:uppercase"' if upper else ""
+        op = f' fill-opacity="{opacity}"' if opacity is not None else ""
         self.add(
             f'<text x="{x:.1f}" y="{y:.1f}" font-family="{family}" font-size="{size}" '
-            f'font-weight="{weight}" fill="{color}" text-anchor="{anchor}"{letter}{transform}>'
+            f'font-weight="{weight}" fill="{color}"{op} text-anchor="{anchor}"{letter}{transform}>'
             f'{esc(value)}</text>'
         )
 
@@ -258,20 +271,32 @@ def band_hero(canvas: Canvas, data: WakaData) -> float:
     canvas.bar(bx, row + 8, bw, 9, human_pct, GREEN, radius=5)
 
     y += hero_h + GAP
+    out_m, out_u = split_count(data.tokens_out)
+    in_m, in_u = split_count(data.tokens_in)
+    line_m, line_u = split_count(data.ai_lines)
+    # 각 타일: (강조색, 접두 단위, 숫자, 후위 단위, 캡션) — 단위는 의미별 색 코드
     tiles = [
-        (fmt_count(data.ai_lines), "AI line changes", None),
-        (fmt_count(data.tokens_in), f"tokens in · {fmt_count(data.tokens_out)} out", "B"),
-        (fmt_money(data.est_cost), "est. cost · 7 days", None),
-        (f"{data.lines_per_prompt:.0f}", "lines / prompt", None),
+        (CLAUDE, "", line_m, line_u, "AI line changes"),
+        (theme.blue, "", in_m, in_u, f"tokens in · {out_m}{out_u} out"),
+        (PURPLE, "$", f"{data.est_cost:,.0f}", "", "est. cost · 7 days"),
+        (GREEN, "", f"{data.lines_per_prompt:.0f}", "", "lines / prompt"),
     ]
     tile_gap = 12
     tile_w = (INNER - tile_gap * 3) / 4
-    for index, (value, label, suffix) in enumerate(tiles):
+
+    def num_width(text):
+        return sum(7.0 if ch == "." else 6.0 if ch == "," else 15.5 for ch in text)
+
+    for index, (accent, prefix, mantissa, unit, label) in enumerate(tiles):
         tx = PAD + index * (tile_w + tile_gap)
         canvas.card(tx, y, tile_w, 72)
-        canvas.text(tx + PAD_IN, y + 32, value, 25, theme.foreground, 700, SANS, spacing="-0.5")
-        if suffix:
-            canvas.text(tx + PAD_IN + len(value) * 15.5, y + 32, suffix, 16, theme.blue, 700, SANS)
+        vx = tx + PAD_IN
+        if prefix:
+            canvas.text(vx, y + 31, prefix, 15, accent, 700, SANS, opacity=0.72)
+            vx += 12
+        canvas.text(vx, y + 32, mantissa, 25, theme.foreground, 700, SANS, spacing="-0.5")
+        if unit:
+            canvas.text(vx + num_width(mantissa) + 3, y + 31, unit, 14, accent, 700, SANS, opacity=0.72)
         canvas.text(tx + PAD_IN, y + 54, label, 11, theme.mute, 500, MONO)
     return y + 72
 
