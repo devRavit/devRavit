@@ -221,11 +221,15 @@ def band_hero(canvas: Canvas, data: WakaData) -> float:
     theme = canvas.theme
     y = TOP
     hero_h = 132
-    # 히어로(AI 링)는 배경 없음 — 투명
+    # 히어로(AI 링) — Claude 시그니처 오렌지 틴트 카드 (시각적 앵커)
+    hero_bg = "#1b130e" if theme.key == "dark" else "#fdf4ee"
+    hero_stroke = "#4a3527" if theme.key == "dark" else "#efd6c6"
+    canvas.rect(PAD, y, INNER, hero_h, hero_bg, radius=14, stroke=hero_stroke)
+    ring_track = "#2c1e15" if theme.key == "dark" else "#f3ddcf"
     cx, cy, r = PAD + PAD_IN + 52, y + hero_h / 2, 52
     circ = 2 * math.pi * r
     offset = circ * (1 - data.ai_coding_pct / 100.0)
-    canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="{theme.track}" stroke-width="13"/>')
+    canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="{ring_track}" stroke-width="13"/>')
     canvas.add(f'<circle cx="{cx}" cy="{cy:.0f}" r="{r}" fill="none" stroke="url(#g_ring)" stroke-width="13" '
                f'stroke-linecap="round" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{offset:.1f}" '
                f'transform="rotate(-90 {cx} {cy:.0f})"/>')
