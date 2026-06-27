@@ -8,32 +8,32 @@
 </defs>
 <rect x="18.0" y="7.0" width="804.0" height="130.0" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <text x="36.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3b82f6" text-anchor="start" letter-spacing="1.3" style="text-transform:uppercase">THIS WEEK vs LAST WEEK</text>
-<text x="804.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="end">52h vs 67h</text>
-<text x="36.0" y="57.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#e5484d" text-anchor="start" letter-spacing="-0.5">▼ 23%</text>
+<text x="804.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="end">44h vs 69h</text>
+<text x="36.0" y="57.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#e5484d" text-anchor="start" letter-spacing="-0.5">▼ 36%</text>
 <text x="118.0" y="57.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#57606a" text-anchor="start">coding time</text>
 <text x="36.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#3a424b" text-anchor="start">Coding time</text>
-<text x="278.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 23%</text>
+<text x="278.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 36%</text>
 <rect x="36.0" y="89.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="36.0" y="89.0" width="242.7" height="6.0" rx="3" fill="#3b82f6"/>
 <rect x="36.0" y="99.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="36.0" y="99.0" width="242.7" height="6.0" rx="3" fill="#9aa3ad"/>
-<text x="36.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 52h</text>
-<text x="278.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#9aa3ad" text-anchor="end">prev 67h</text>
+<text x="36.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 44h</text>
+<text x="278.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#9aa3ad" text-anchor="end">prev 69h</text>
 <text x="298.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#3a424b" text-anchor="start">AI lines</text>
-<text x="541.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 29%</text>
+<text x="541.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 31%</text>
 <rect x="298.7" y="89.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="298.7" y="89.0" width="242.7" height="6.0" rx="3" fill="#D97757"/>
 <rect x="298.7" y="99.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="298.7" y="99.0" width="242.7" height="6.0" rx="3" fill="#9aa3ad"/>
-<text x="298.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 43.3K</text>
-<text x="541.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#9aa3ad" text-anchor="end">prev 61.1K</text>
+<text x="298.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 40.5K</text>
+<text x="541.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#9aa3ad" text-anchor="end">prev 58.9K</text>
 <text x="561.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#3a424b" text-anchor="start">Tokens</text>
-<text x="804.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 27%</text>
+<text x="804.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 33%</text>
 <rect x="561.3" y="89.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="561.3" y="89.0" width="242.7" height="6.0" rx="3" fill="#A371F7"/>
 <rect x="561.3" y="99.0" width="242.7" height="6.0" rx="3" fill="#e7ebef"/>
 <rect x="561.3" y="99.0" width="242.7" height="6.0" rx="3" fill="#9aa3ad"/>
-<text x="561.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 3.01B</text>
+<text x="561.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#6e7781" text-anchor="start">now 2.77B</text>
 <text x="804.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#9aa3ad" text-anchor="end">prev 4.11B</text>
 <rect x="18.0" y="151.0" width="394.0" height="98.0" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <text x="36.0" y="175.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3b82f6" text-anchor="start" letter-spacing="1.3" style="text-transform:uppercase">AI AGENT</text>
