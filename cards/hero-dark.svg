@@ -8,13 +8,13 @@
 </defs>
 <rect x="18.0" y="7.0" width="804.0" height="132.0" rx="14" fill="#1b130e" stroke="#4a3527" stroke-width="1"/>
 <circle cx="88" cy="73" r="52" fill="none" stroke="#2c1e15" stroke-width="13"/>
-<circle cx="88" cy="73" r="52" fill="none" stroke="url(#g_ring)" stroke-width="13" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="1.9" transform="rotate(-90 88 73)"/>
+<circle cx="88" cy="73" r="52" fill="none" stroke="url(#g_ring)" stroke-width="13" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="4.0" transform="rotate(-90 88 73)"/>
 <text x="88.0" y="71.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="34" font-weight="700" fill="#f0f6fc" text-anchor="middle" letter-spacing="-1">99</text>
 <text x="88.0" y="89.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="9" font-weight="600" fill="#E8A06F" text-anchor="middle" letter-spacing="1">% AI-DRIVEN</text>
 <text x="186.0" y="35.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" font-weight="600" fill="#f0f6fc" text-anchor="start">거의 모든 코드를 Claude와 함께 작성했어요</text>
 <circle cx="190" cy="57" r="4" fill="#D97757"/>
 <text x="202.0" y="61.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="500" fill="#8b949e" text-anchor="start">AI</text>
-<text x="228.0" y="61.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#f0f6fc" text-anchor="start">43.3K</text>
+<text x="228.0" y="61.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#f0f6fc" text-anchor="start">29.3K</text>
 <text x="804.0" y="61.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="600" fill="#c9d1d9" text-anchor="end">100%</text>
 <rect x="186.0" y="69.0" width="618.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="186.0" y="69.0" width="618.0" height="9.0" rx="5" fill="url(#g_claude)"/>
@@ -24,18 +24,18 @@
 <text x="804.0" y="97.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="13" font-weight="600" fill="#7d8590" text-anchor="end">0%</text>
 <rect x="186.0" y="105.0" width="618.0" height="9.0" rx="5" fill="#1c222b"/>
 <rect x="18.0" y="153.0" width="192.0" height="72.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
-<text x="36.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">43.3</text>
+<text x="36.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">29.3</text>
 <text x="92.5" y="184.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#D97757" fill-opacity="0.72" text-anchor="start">K</text>
 <text x="36.0" y="207.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="start">AI line changes</text>
 <rect x="222.0" y="153.0" width="192.0" height="72.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
-<text x="240.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">3.00</text>
+<text x="240.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">1.73</text>
 <text x="296.5" y="184.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#58A6FF" fill-opacity="0.72" text-anchor="start">B</text>
-<text x="240.0" y="207.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="start">tokens in · 4.7M out</text>
+<text x="240.0" y="207.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="start">tokens in · 2.7M out</text>
 <rect x="426.0" y="153.0" width="192.0" height="72.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
 <text x="444.0" y="184.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#A371F7" fill-opacity="0.72" text-anchor="start">$</text>
-<text x="456.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">8,970</text>
+<text x="456.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">5,236</text>
 <text x="444.0" y="207.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="start">est. cost · 7 days</text>
 <rect x="630.0" y="153.0" width="192.0" height="72.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
-<text x="648.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">41</text>
+<text x="648.0" y="185.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="25" font-weight="700" fill="#f0f6fc" text-anchor="start" letter-spacing="-0.5">30</text>
 <text x="648.0" y="207.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#7d8590" text-anchor="start">lines / prompt</text>
 </svg>
