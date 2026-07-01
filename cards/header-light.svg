@@ -10,7 +10,7 @@
 <rect x="36.0" y="20.0" width="46.0" height="46.0" rx="13" fill="url(#g_blue)"/>
 <text x="59.0" y="50.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">R</text>
 <text x="96.0" y="37.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#1f2328" text-anchor="start" letter-spacing="-0.2">devRavit</text>
-<text x="96.0" y="56.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="start">WakaTime · last week · 21 hrs 14 mins coded</text>
+<text x="96.0" y="56.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="start">WakaTime · last week · 39 hrs 59 mins coded</text>
 <rect x="700.1" y="20.0" width="103.9" height="26.0" rx="13" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
 <circle cx="713.1" cy="33" r="3.5" fill="#3b82f6"/>
 <text x="724.1" y="37.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3a424b" text-anchor="start">AI-Native</text>
@@ -19,6 +19,6 @@
 <text x="616.2" y="37.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3a424b" text-anchor="start">Night Owl</text>
 <rect x="467.2" y="20.0" width="111.0" height="26.0" rx="13" fill="#fbe9df" stroke="#D97757" stroke-width="1"/>
 <text x="478.2" y="37.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="12" font-weight="400" fill="#1f2328" text-anchor="start">🔥</text>
-<text x="496.2" y="37.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3a424b" text-anchor="start">27d streak</text>
-<text x="804.0" y="61.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#9aa3ad" text-anchor="end">avg 5 hrs 18 mins / day</text>
+<text x="496.2" y="37.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#3a424b" text-anchor="start">28d streak</text>
+<text x="804.0" y="61.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#9aa3ad" text-anchor="end">avg 5 hrs 42 mins / day</text>
 </svg>
