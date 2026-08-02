@@ -8,33 +8,33 @@
 </defs>
 <rect x="18.0" y="7.0" width="804.0" height="130.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
 <text x="36.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.3" style="text-transform:uppercase">THIS WEEK vs LAST WEEK</text>
-<text x="804.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="end">25h vs 26h</text>
-<text x="36.0" y="57.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#e5484d" text-anchor="start" letter-spacing="-0.5">▼ 3%</text>
-<text x="104.0" y="57.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#8b949e" text-anchor="start">coding time</text>
+<text x="804.0" y="31.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="end">20h vs 26h</text>
+<text x="36.0" y="57.0" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="#e5484d" text-anchor="start" letter-spacing="-0.5">▼ 20%</text>
+<text x="118.0" y="57.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#8b949e" text-anchor="start">coding time</text>
 <text x="36.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#c9d1d9" text-anchor="start">Coding time</text>
-<text x="278.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 3%</text>
+<text x="278.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 20%</text>
 <rect x="36.0" y="89.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
 <rect x="36.0" y="89.0" width="242.7" height="6.0" rx="3" fill="#58A6FF"/>
 <rect x="36.0" y="99.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
 <rect x="36.0" y="99.0" width="242.7" height="6.0" rx="3" fill="#5b6470"/>
-<text x="36.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 25h</text>
+<text x="36.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 20h</text>
 <text x="278.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#5b6470" text-anchor="end">prev 26h</text>
 <text x="298.7" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#c9d1d9" text-anchor="start">AI lines</text>
-<text x="541.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 23%</text>
+<text x="541.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 43%</text>
 <rect x="298.7" y="89.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
 <rect x="298.7" y="89.0" width="242.7" height="6.0" rx="3" fill="#D97757"/>
 <rect x="298.7" y="99.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
 <rect x="298.7" y="99.0" width="242.7" height="6.0" rx="3" fill="#5b6470"/>
-<text x="298.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 11.3K</text>
-<text x="541.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#5b6470" text-anchor="end">prev 14.8K</text>
+<text x="298.7" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 9.3K</text>
+<text x="541.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#5b6470" text-anchor="end">prev 16.4K</text>
 <text x="561.3" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#c9d1d9" text-anchor="start">Tokens</text>
-<text x="804.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#2EA043" text-anchor="end">▲ 9%</text>
+<text x="804.0" y="81.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#e5484d" text-anchor="end">▼ 14%</text>
 <rect x="561.3" y="89.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
 <rect x="561.3" y="89.0" width="242.7" height="6.0" rx="3" fill="#A371F7"/>
 <rect x="561.3" y="99.0" width="242.7" height="6.0" rx="3" fill="#1c222b"/>
-<rect x="561.3" y="99.0" width="223.3" height="6.0" rx="3" fill="#5b6470"/>
-<text x="561.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 1.65B</text>
-<text x="804.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#5b6470" text-anchor="end">prev 1.52B</text>
+<rect x="561.3" y="99.0" width="242.7" height="6.0" rx="3" fill="#5b6470"/>
+<text x="561.3" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="start">now 1.41B</text>
+<text x="804.0" y="117.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#5b6470" text-anchor="end">prev 1.65B</text>
 <rect x="18.0" y="151.0" width="394.0" height="98.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
 <text x="36.0" y="175.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="600" fill="#58A6FF" text-anchor="start" letter-spacing="1.3" style="text-transform:uppercase">AI AGENT</text>
 <text x="394.0" y="175.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="10" font-weight="500" fill="#7d8590" text-anchor="end">lines · cost</text>
