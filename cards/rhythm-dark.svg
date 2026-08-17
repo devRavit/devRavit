@@ -12,9 +12,9 @@
 <clipPath id="todclip"><rect x="36" y="41" width="358.0" height="12" rx="6"/></clipPath>
 <g clip-path="url(#todclip)">
 <rect x="36.0" y="41.0" width="0.5" height="12.0" rx="0" fill="#4C5FD5"/>
-<rect x="36.0" y="41.0" width="118.3" height="12.0" rx="0" fill="#E0A14B"/>
-<rect x="153.8" y="41.0" width="236.3" height="12.0" rx="0" fill="#58A6FF"/>
-<rect x="389.7" y="41.0" width="4.8" height="12.0" rx="0" fill="#A371F7"/>
+<rect x="36.0" y="41.0" width="119.8" height="12.0" rx="0" fill="#E0A14B"/>
+<rect x="155.3" y="41.0" width="232.6" height="12.0" rx="0" fill="#58A6FF"/>
+<rect x="387.3" y="41.0" width="7.2" height="12.0" rx="0" fill="#A371F7"/>
 <rect x="394.0" y="41.0" width="0.5" height="12.0" rx="0" fill="#7C4DD0"/>
 </g>
 <rect x="36.0" y="60.0" width="9.0" height="9.0" rx="3" fill="#4C5FD5"/>
@@ -22,13 +22,13 @@
 <text x="394.0" y="69.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">0.0%</text>
 <rect x="36.0" y="78.0" width="9.0" height="9.0" rx="3" fill="#E0A14B"/>
 <text x="52.0" y="87.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🌅 아침</text>
-<text x="394.0" y="87.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">32.9%</text>
+<text x="394.0" y="87.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">33.3%</text>
 <rect x="36.0" y="96.0" width="9.0" height="9.0" rx="3" fill="#58A6FF"/>
 <text x="52.0" y="105.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">☀️ 낮</text>
-<text x="394.0" y="105.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">65.9%</text>
+<text x="394.0" y="105.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">64.8%</text>
 <rect x="36.0" y="114.0" width="9.0" height="9.0" rx="3" fill="#A371F7"/>
 <text x="52.0" y="123.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🌆 저녁</text>
-<text x="394.0" y="123.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">1.2%</text>
+<text x="394.0" y="123.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">1.9%</text>
 <rect x="36.0" y="132.0" width="9.0" height="9.0" rx="3" fill="#7C4DD0"/>
 <text x="52.0" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🌃 밤</text>
 <text x="394.0" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="end">0.0%</text>
@@ -52,5 +52,5 @@
 <rect x="18.0" y="177.0" width="804.0" height="48.0" rx="14" fill="#0d1117" stroke="#20262e" stroke-width="1"/>
 <text x="36.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#c9d1d9" text-anchor="start">🏆 가장 생산적인 날</text>
 <text x="804.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#58A6FF" text-anchor="end">화요일 · 6 hrs 23 mins</text>
-<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="middle">🔥 0일 연속 · 최장 몰입 2h 20m</text>
+<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#7d8590" text-anchor="middle">🔥 0일 연속 · 최장 몰입 1h 45m</text>
 </svg>
