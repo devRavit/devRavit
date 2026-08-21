@@ -41,7 +41,7 @@
 <text x="520.4" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">화</text>
 <rect x="550.6" y="95.3" width="44.3" height="29.7" rx="4" fill="#9aa3ad"/>
 <text x="572.7" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">수</text>
-<rect x="602.9" y="63.5" width="44.3" height="61.5" rx="4" fill="#9aa3ad"/>
+<rect x="602.9" y="81.8" width="44.3" height="43.2" rx="4" fill="#9aa3ad"/>
 <text x="625.0" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">목</text>
 <rect x="655.1" y="77.6" width="44.3" height="47.4" rx="4" fill="#9aa3ad"/>
 <text x="677.3" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">금</text>
@@ -51,6 +51,6 @@
 <text x="781.9" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">일</text>
 <rect x="18.0" y="177.0" width="804.0" height="48.0" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <text x="36.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#3a424b" text-anchor="start">🏆 가장 생산적인 날</text>
-<text x="804.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="end">화요일 · 15 hrs 34 mins</text>
-<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="middle">🔥 5일 연속 · 최장 몰입 9h 50m</text>
+<text x="804.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="end">월요일 · 23 hrs 59 mins</text>
+<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="middle">🔥 0일 연속 · 최장 몰입 9h 50m</text>
 </svg>
