@@ -43,7 +43,7 @@
 <text x="572.7" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">수</text>
 <rect x="602.9" y="73.9" width="44.3" height="51.1" rx="4" fill="#9aa3ad"/>
 <text x="625.0" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">목</text>
-<rect x="655.1" y="81.2" width="44.3" height="43.8" rx="4" fill="#9aa3ad"/>
+<rect x="655.1" y="93.0" width="44.3" height="32.0" rx="4" fill="#9aa3ad"/>
 <text x="677.3" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">금</text>
 <rect x="707.4" y="121.0" width="44.3" height="4.0" rx="4" fill="#9aa3ad"/>
 <text x="729.6" y="141.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="11" font-weight="500" fill="#6e7781" text-anchor="middle">토</text>
@@ -52,5 +52,5 @@
 <rect x="18.0" y="177.0" width="804.0" height="48.0" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 <text x="36.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#3a424b" text-anchor="start">🏆 가장 생산적인 날</text>
 <text x="804.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="600" fill="#3b82f6" text-anchor="end">금요일 · 4 hrs 30 mins</text>
-<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="middle">🔥 5일 연속 · 최장 몰입 58m</text>
+<text x="420.0" y="205.0" font-family="'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace" font-size="12" font-weight="500" fill="#6e7781" text-anchor="middle">🔥 0일 연속 · 최장 몰입 58m</text>
 </svg>
